@@ -115,7 +115,7 @@ h2{
 .keys {
     display: flex;
     flex: 1;
-    min-height: 100vh;
+    height: 100px;
     align-items: center;
     justify-content: center;
 }
