@@ -112,7 +112,45 @@ h2{
     
   }
 
+.keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
 
+.key {
+    border: .4rem;
+    border-radius: 0rem 3rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all 0.07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: #04001a;
+    text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+    color: #ff6666;
+    transform: scale(1.1);
+    box-shadow: 1rem 1rem #cc3333;
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #cc3333;
+}
    
   
   
