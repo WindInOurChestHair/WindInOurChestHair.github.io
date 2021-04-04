@@ -37,8 +37,26 @@ body{
     text-align:center;
     color:#fff;
 }
+.text{
+    width: 80%;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align:center;
+    color:#fff;
+}
 h1{
     font-size: 90px;
+    color: transparent;
+    -webkit-text-stroke: 1px #f1c40f;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+p{
+    font-size: 40px;
     color: transparent;
     -webkit-text-stroke: 1px #f1c40f;
     background: url(back.png);
