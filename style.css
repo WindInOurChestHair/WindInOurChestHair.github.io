@@ -62,7 +62,7 @@ body{
    which tends to work better than using !important 
    (future you will thank you later)*/
 
-  background-color: rgb(0, 0, 0,0) !important;
+  background-color: rgba(48, 47, 47, 0.274) !important;
 
 }
 h1{
