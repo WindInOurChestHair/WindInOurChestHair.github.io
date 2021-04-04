@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrument Emulator: Drums</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    function playAudio(url) {
+      new Audio(url).play();
+    }
+  </script>
+</head>
+
+<body>
+  <div class="nav-bar">
+    <div class="nav-logo">
+
+      <img src="logo.png" onclick="playAudio('wind.wav')">
+
+    </div>
+
+    <div class="nav-link">
+      <ul>
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="about.html">
+          <li>About</li>
+        </a>
+        <a href="https://discord.gg/wm8WUUjhj8">
+          <li>Join Us</li>
+        </a>
+        <a href="members.html">
+          <li>Members</li>
+        </a>
+        <a href="fartboard.html">
+          <li> Windy Noises </li>
+        </a>
+
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="parallax">
+    <canvas id="playArea"> </canvas>
+
+    <div class="title">
+      <div class="keys">
+        <div data-key="65" class="key">
+          <kbd>A</kbd>
+          <span class="sound">Wind</span>
+        </div>
+        <div data-key="83" class="key">
+          <kbd>S</kbd>
+          <span class="sound">In</span>
+        </div>
+        <div data-key="68" class="key">
+          <kbd>D</kbd>
+          <span class="sound"> Our </span>
+        </div>
+        <div data-key="70" class="key">
+          <kbd>F</kbd>
+          <span class="sound"> Chest </span>
+        </div>
+        <div data-key="71" class="key">
+          <kbd>G</kbd>
+          <span class="sound">Hair</span>
+        </div>
+        <div data-key="72" class="key">
+          <kbd>H</kbd>
+          <span class="sound">Is</span>
+        </div>
+        <div data-key="74" class="key">
+          <kbd>J</kbd>
+          <span class="sound">The</span>
+        </div>
+        <div data-key="75" class="key">
+          <kbd>K</kbd>
+          <span class="sound">Best</span>
+        </div>
+        <div data-key="76" class="key">
+          <kbd>L</kbd>
+          <span class="sound">Guild</span>
+        </div>
+      </div>
+    </div>
+    <div id="stars-container">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+    </div>
+  </div>
+
+
+  <audio data-key="65" src="sounds/1.mp3"></audio>
+  <audio data-key="83" src="sounds/3.wav"></audio>
+  <audio data-key="68" src="sounds/4.flac"></audio>
+  <audio data-key="70" src="sounds/11.wav"></audio>
+  <audio data-key="71" src="sounds/6.wav"></audio>
+  <audio data-key="72" src="sounds/12.wav"></audio>
+  <audio data-key="74" src="sounds/13.mp3"></audio>
+  <audio data-key="75" src="sounds/14.mp3"></audio>
+  <audio data-key="76" src="sounds/10.wav"></audio>
+
+  <script src="script.js"></script>
+  <script src="action.js"></script>
+
+
+</body>
+
+</html>
